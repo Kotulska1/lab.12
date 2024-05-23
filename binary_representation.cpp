@@ -24,3 +24,14 @@ void writeBinaryToFile(const string &filename, const string &binaryStr) {
         cout << "Неможливо відкрити файл" << filename << endl;
     }
 }
+
+// Підраховує кількість нулів у двійковому рядку
+int countZerosInBinary(const string &binaryStr) {
+    int zeroCount = 0;
+    for (char c : binaryStr) {
+        if (c == '0') {
+            zeroCount++;
+        }
+    }
+    return zeroCount;
+}
