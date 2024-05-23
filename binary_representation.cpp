@@ -15,3 +15,12 @@ string decimalToBinary(int number) {
     }
     return binaryStr;
 }
+void writeBinaryToFile(const string &filename, const string &binaryStr) {
+    ofstream outFile(filename);
+    if (outFile.is_open()) {
+        outFile << binaryStr;
+        outFile.close();
+    } else {
+        cout << "Неможливо відкрити файл" << filename << endl;
+    }
+}
