@@ -14,6 +14,7 @@ string decimalToBinary(int number) {
         number /= 2;
     }
     return binaryStr;
+    // Функція to_string() перетворює число на рядок
 }
 void writeBinaryToFile(const string &filename, const string &binaryStr) {
     ofstream outFile(filename);
